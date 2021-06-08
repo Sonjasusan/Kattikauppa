@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    scroll-behavior: smooth;
+   
+}
+.p1 {
+  font-size: 20px;
+}
+
+.header {
+    background-color:plum;
+    border: solid plum;
+    padding: 20px;
+    text-align: center;
+    font-size: 35px;
+    font-family: fantasy;
+    font-style: norm;
+    color: black;
+    
+}
+
+
+
+.ul1/*=Headerin navigaatio-osa (etusivu, tuotteet) **/{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li.link {
+    float: left;
+  }
+  
+  li.link a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.link a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: violet;
+  }
+/*Headerin navigaatio-osa päättyy **/
+
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+ 
+  text-align:center;
+  background-color:lavenderblush;
+}
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+img {
+  width: 75%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+  
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+
+/*Kuva-galleria eläinsuojelu yhdistyksistä alkaa.. **/
+}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    /* ...Kuva galleria päättyy **/
+  }
+  
+
+.footer /* =ala"tunniste**/{
+    background-color: thistle;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Buttonit*/
+
+.omaButton{
+    background-color: green;
+    border:none;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 12px;
+}
+.button1 /*Yhteystiedot*/{
+    padding: 12px 24px;
+}
+
+.button2 {
+  display: inline-block;
+  background-color: violet;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 12px 24px;
+
+}
+
+  /* Yhteystiedot sivun taulukko */
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    
+  }
+  th, td {
+    padding: 15px;
+  }
+  th {
+    background-color: palevioletred;
+  }
+
+/* Start https://www.cursors-4u.com */ * 
+{cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat993.cur), auto !important;} /* End https://www.cursors-4u.com */
